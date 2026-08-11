@@ -5,16 +5,16 @@ on:
 
 jobs:
   demo:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-Steps:
-  - name: step level example
-  env:
-    CITY: Hyderabad
-    TRAINER: TVS
-  run: |
-    echo "city is $CITY"
-    echo "Trainer is $TRAINER"
+    steps:
+      - name: Step level example
+        env:
+          CITY: Hyderabad
+          TRAINER: TVS
+        run: |
+          echo "City is $CITY"
+          echo "Trainer is $TRAINER"
 
-  - name: next step
-    run: echo "City is $CITY and trasfer is $TRAINER"
+      - name: Next step
+        run: echo "City is $CITY and Trainer is $TRAINER"
